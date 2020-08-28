@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 
-const Sports = () => {
+const Sports = ({ listSports }) => {
+    useEffect(() => {
+        listSports();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+      }, []);
+
     return (
         <div>
             

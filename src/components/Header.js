@@ -8,8 +8,8 @@ const Header = () => {
 
     return (
         <header className="header">
-            <button class="toggle" onClick={toggle}>
-                <i class="fa fa-bars fa-2x"></i>
+            <button className="toggle" onClick={toggle}>
+                <i className="fa fa-bars fa-2x"></i>
             </button>
             <h1>Sports Database</h1>
         </header>
