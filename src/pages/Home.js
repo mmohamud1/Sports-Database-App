@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 const Home = () => {
     return (
         <section>
-            <h2 className="sub-heading">An interavtive website in which you can search for any athlete and team from a wide selection of sports </h2>
+            <h2 className="sub-heading">An interactive website in which you can search for any athlete and team from a wide selection of sports </h2>
             <div className="home">
                 <h4 className="home-title">Welcome to my sports database :)</h4>
                 <p className="home-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate a consequatur numquam porro dolor totam molestiae, in ipsam nostrum optio eveniet neque iusto praesentium. Quam eos perspiciatis earum nam sequi hic, laboriosam commodi totam alias, eveniet odio! Quaerat obcaecati animi debitis, eos cumque placeat incidunt aliquid, reiciendis neque harum praesentium officia voluptatem exercitationem labore at iure dolorum? Soluta illo quidem, numquam vero ad libero reprehenderit rerum ducimus placeat praesentium et quos tempora impedit laboriosam dolore provident! Eos sequi voluptatem et odit natus nihil quas. Voluptatum non fuga eos! Enim eos a ut voluptate quibusdam eveniet quis harum aliquam perspiciatis adipisci?</p>

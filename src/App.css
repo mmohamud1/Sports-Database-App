@@ -105,6 +105,7 @@ button:focus {
     background-color: rgba(0,0,0,0.3);
     position: absolute;
     top: 20px;
+    border-radius: 10px;
     left: 20px;
 }
 
@@ -132,4 +133,25 @@ button:focus {
 .home-text {
     padding: 0 90px;
     line-height: 25px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+@media (max-width: 700px) {
+
+    .grid-3 {
+      grid-template-columns: 1fr;
+    }
+}
+
+.my-3 {
+    margin: 3rem 0;
+}
+
+.ml-3 {
+    margin-left: 5rem;
 }
