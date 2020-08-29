@@ -8,6 +8,9 @@ const SportsItem = ({ sport }) => {
             </div>
             <div className="card-1-bottom">
                 <h1 className="card-1-title">{sport.strSport}</h1>
+                <button className="btn card-1-btn">
+                    More Info
+                </button>
             </div>
         </div>
     )

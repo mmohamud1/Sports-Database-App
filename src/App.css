@@ -298,8 +298,16 @@ button:focus {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 10px 10px;
 }
 
 .card-1-title {
     color: var(--primary-color);
+    font-size: 25px;
+}
+
+.card-1-btn {
+    margin-bottom: 20px;
+    padding: 8px 26px;
+    font-size: 15px;
 }
