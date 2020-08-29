@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 :root {
     --modal-duration: 1s;
@@ -7,7 +7,7 @@
 }
 
 * {
-        box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -24,7 +24,7 @@ body.show-nav {
 
 nav {
     background-color: var(--primary-color);
-    color: #ffffff;
+    color: #fff;
     position: fixed;
     top: 0;
     left: 0;
@@ -61,7 +61,7 @@ nav ul li:first-of-type {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -71,7 +71,7 @@ nav ul li a:hover {
 
 header {
     background-color: var(--primary-color);
-    color: #ffffff;
+    color: #fff;
     font-size: 130%;
     position: relative;
     padding: 40px 15px;
@@ -82,6 +82,14 @@ header h1 {
     margin: 0;
     line-height: 1px;
     padding-top: 20px;
+    font-size: 50px;
+}
+
+@media (max-width: 700px) {
+
+    header h1 {
+      font-size: 25px;
+    }
 }
 
 header p {
@@ -92,7 +100,7 @@ button {
     background-color: var(--secondary-color);
     border: 0;
     border-radius: px;
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     padding: 8px 12px;
 }
@@ -105,7 +113,7 @@ button:focus {
     background-color: rgba(0,0,0,0.3);
     position: absolute;
     top: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     left: 20px;
 }
 
@@ -118,7 +126,7 @@ button:focus {
 }
 
 .sub-heading {
-    color: #ffffff;
+    color: #fff;
     text-align: center;
     font-weight: 200;
     margin-bottom: 30px;
@@ -130,7 +138,7 @@ button:focus {
     background-color: var(--secondary-color);
     border: 0;
     border-radius: 5px;
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     padding: 12px 30px;
     font-size: 20px;
@@ -146,7 +154,7 @@ button:focus {
 
 .home-title {
     text-align: center;
-    font-size: 25px;
+    font-size: 29px;
 }
 
 .home-text {
@@ -155,7 +163,7 @@ button:focus {
 }
 
 .modal-1 {
-    background-color: #ffffff;
+    background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     position: absolute;
@@ -182,8 +190,11 @@ button:focus {
 
 .modal-1-header {
     background: var(--primary-color);
-    color: #ffffff;
+    color: #fff;
     padding: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
 }
 
 .modal-1-header h3 {
@@ -216,10 +227,11 @@ button:focus {
     background-color: var(--secondary-color);
     border: 0;
     border-radius: 5px;
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     padding: 8px 12px;
     margin-left: 150px;
+    font-size: 16px;
 }
 
 @media (max-width: 700px) {
@@ -244,23 +256,36 @@ button:focus {
     }
 
     .home-text {
-        font-size: 10px;
+        font-size: 9px;
         line-height: 20px;
         text-align: center;
+        padding: 0 10px;
     }
-
 }
 
-
-.grid-3 {
+.grid-4 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1150px) {
 
-    .grid-3 {
+    .grid-4 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 875px) {
+
+    .grid-4 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .grid-4 {
       grid-template-columns: 1fr;
     }
 }
@@ -269,8 +294,19 @@ button:focus {
     margin: 3rem 0;
 }
 
-.ml-3 {
-    margin-left: 7rem;
+.ml-1 {
+    margin-left: 2rem;
+}
+
+@media (max-width: 700px) {
+
+    .ml-1 {
+      margin-left: .5rem;
+    }
+}
+
+.px-2 {
+    padding: 0 3rem;
 }
 
 .card-1 {
@@ -278,6 +314,7 @@ button:focus {
     width: 250px;
     border-radius: 5px;
     margin-bottom: 40px;
+    box-shadow: 0 7px 28px 0 rgba(255,255,255,0.45)
 }
 
 .card-1-top {
@@ -298,7 +335,7 @@ button:focus {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px 10px;
+    padding: 20px 10px;
 }
 
 .card-1-title {
@@ -308,6 +345,6 @@ button:focus {
 
 .card-1-btn {
     margin-bottom: 20px;
-    padding: 8px 26px;
+    padding: 8px 15px;
     font-size: 15px;
 }

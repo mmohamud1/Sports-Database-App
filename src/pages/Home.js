@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
+import Logo from '../img/sportsicon.png'
 
 const Home = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false)
@@ -9,7 +10,7 @@ const Home = () => {
             <div className="home-header">
                 <h2 className="sub-heading">An interactive website in which you can search for any athlete and team from a wide selection of sports </h2>
                 <button className="btn" onClick={() => setModalIsOpen(true)}>
-                        Sign Up
+                    Sign Up
                 </button>
             </div>
             <div className="home">
@@ -23,10 +24,11 @@ const Home = () => {
                     <i class="fa fa-times"></i>
                 </button>
                 <div className="modal-1-header">
+                    <img src={Logo} alt="logo" style={{ width: '55px', height: '50px'}}/>
                     <h3>Sign Up</h3>
                 </div>
                 <div className="modal-1-content">
-                    <p>Register with us to get offers, support and more</p>
+                    <p>Register with us to get up to date information and results</p>
                     <form className="modal-1-form">
                     <div>
                         <label for="name">Name</label>

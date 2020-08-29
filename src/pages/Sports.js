@@ -13,7 +13,7 @@ const Sports = ({ listSports, sports, loading }) => {
         return <Spinner />
     } else {
         return (
-            <div className="grid-3 my-3 ml-3">
+            <div className="grid-4 my-3 px-2 ml-1">
                 {sports.map(sport => (
                     <SportsItem key={sport.idSport} sport={sport}/>
                 ))}
