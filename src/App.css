@@ -109,12 +109,31 @@ button:focus {
     left: 20px;
 }
 
+.home-header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
 .sub-heading {
     color: #ffffff;
     text-align: center;
     font-weight: 200;
-    margin-bottom: 60px;
-    padding: 0 200px;
+    margin-bottom: 30px;
+    padding: 0 250px;
+    font-weight: 300;
+}
+
+.btn {
+    background-color: var(--secondary-color);
+    border: 0;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 12px 30px;
+    font-size: 20px;
 }
 
 .home {
@@ -135,6 +154,36 @@ button:focus {
     line-height: 25px;
 }
 
+@media (max-width: 700px) {
+
+    .sub-heading {
+      font-size: 15px;
+      padding: 0 100px;
+    }
+
+    .btn {
+        padding: 8px 20px;
+        font-size: 10px;
+    }
+
+    .home {
+        padding: 10px 20px;
+        margin: 10px 0;
+    }
+
+    .home-title {
+        font-size: 20px;
+    }
+
+    .home-text {
+        font-size: 10px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+}
+
+
 .grid-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -154,4 +203,72 @@ button:focus {
 
 .ml-3 {
     margin-left: 5rem;
+}
+
+.modal-1 {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 400px;
+    color: var(--primary-color);
+}
+
+.modal-1:focus {
+    outline: none;
+}
+
+.close-btn {
+    background: transparent;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.modal-1-header {
+    background: var(--primary-color);
+    color: #ffffff;
+    padding: 15px;
+}
+
+.modal-1-header h3 {
+    margin: 0;
+    border-bottom: 1px solid #333;
+}
+
+.modal-1-content {
+    padding: 20px;
+}
+
+.modal-1-form div {
+    margin: 15px 0;
+}
+
+.modal-1-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal-1-form .form-input {
+    padding: 8px;
+    width: 100%;
+}
+
+.form-input:focus {
+    outline-color: var(--secondary-color);
+}
+.submit-btn {
+    background-color: var(--secondary-color);
+    border: 0;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 8px 12px;
+    margin-left: 150px;
 }
