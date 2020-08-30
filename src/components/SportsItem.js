@@ -26,6 +26,10 @@ const SportsItem = ({ sport }) => {
                     <img src={Logo} alt="logo" style={{ width: '55px', height: '50px'}}/>
                     <h3>{sport.strSport}</h3>
                 </div>
+                <div className="modal-2-content">
+                    <h4>{sport.strFormat}</h4>
+                    <p>{sport.strSportDescription}</p>
+                </div>
             </Modal>
         </div>
     )
