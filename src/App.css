@@ -147,7 +147,7 @@ button:focus {
     margin: 30px 0;
     padding: 15px 250px ;
     background-color: #fff;
-    height: 100%;
+    min-height: 100%;
     color: var(--primary-color);
 }
 
@@ -285,6 +285,12 @@ button:focus {
     }
 }
 
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
 .grid-4 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -300,14 +306,16 @@ button:focus {
 
 @media (max-width: 875px) {
 
-    .grid-4 {
+    .grid-4,
+    .grid-3 {
       grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 600px) {
 
-    .grid-4 {
+    .grid-4,
+    .grid-3 {
       grid-template-columns: 1fr;
     }
 }
@@ -373,7 +381,7 @@ button:focus {
 
 .search-box {
     position: absolute;
-    top: 15%;
+    top: 21%;
     left: 50%;
     transform:  translate(-50%,50%);
     background: #fff;
@@ -385,7 +393,7 @@ button:focus {
 }
 
 .search-box:hover > .search-input {
-    width: 240px;
+    width: 300px;
     padding: 0 6px;
 }
 
@@ -425,4 +433,15 @@ button:focus {
     width: 150px;
     padding: 0 6px;
 }
+}
+
+.teams-container {
+    padding: 10px 100px;
+    margin-top: 155px;
+    margin-left: 170px;
+}
+
+.team-bg {
+    background-color: white;
+    min-height: 360px;
 }
