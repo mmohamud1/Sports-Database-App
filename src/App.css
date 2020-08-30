@@ -153,7 +153,8 @@ button:focus {
 }
 
 
-.modal-1 {
+.modal-1,
+.modal-2 {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -167,7 +168,8 @@ button:focus {
     color: var(--primary-color);
 }
 
-.modal-1:focus {
+.modal-1:focus,
+.modal-2:focus {
     outline: none;
 }
 
@@ -179,7 +181,8 @@ button:focus {
     right: 0;
 }
 
-.modal-1-header {
+.modal-1-header,
+.modal-2-header {
     background: var(--primary-color);
     color: #fff;
     padding: 15px;
@@ -189,6 +192,11 @@ button:focus {
 }
 
 .modal-1-header h3 {
+    margin: 0;
+    border-bottom: 1px solid #333;
+}
+
+.modal-2-header h3 {
     margin: 0;
     border-bottom: 1px solid #333;
 }
