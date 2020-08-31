@@ -382,14 +382,7 @@ button:focus {
 .search-box {
     width: 100%;
     background-color: var(--primary-color);
-}
-
-.search-title {
-    font-size: 22px;
-    font-weight: 900;
-    text-align: center;
-    color: var(--secondary-color);
-    
+    margin-top: 40px;
 }
 
 .search-bar {
@@ -444,11 +437,57 @@ button:focus {
 
 .teams-container {
     padding: 10px 100px;
-    margin-top: 155px;
-    margin-left: 170px;
+    margin-top: 50px;
 }
 
 .team-bg {
     background-color: white;
-    min-height: 660px;
+    min-height: 500px;
+}
+
+.card-2 {
+    margin-bottom: 2rem;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--primary-color);
+}
+
+.card-2-top {
+    height: 20rem;
+    width: 100%;
+    position: relative;
+    background-color: var(--secondary-color);
+    border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.card-2-top-img {
+    height: 18rem;
+    width: 18rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-2-bottom {
+    height: auto;
+    width: 20rem;
+    padding: 1rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+.card-2-title {
+    font-size: 25px;
+    line-height: 40px;
+    margin-bottom: 0px;
 }

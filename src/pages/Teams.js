@@ -1,5 +1,6 @@
 import React from 'react';
-import TeamSearch from '../components/TeamSearch'
+import TeamSearch from '../components/TeamSearch';
+import TeamItem from '../components/TeamItem'
 
 
 const Teams = ({ getTeams, teams }) => {
@@ -9,7 +10,7 @@ const Teams = ({ getTeams, teams }) => {
             <TeamSearch getTeams={getTeams}/>
             <div className="grid-3 teams-container">
                 {teams.map(team => (
-                    <img key={team.idTeam} src={team.strTeamBadge} alt="Team Badge" style={{ width: '100px', height: '100px'}}/>
+                    <TeamItem key={team.idTeam} team={team} />
                 ))}
             </div>
         </div>
