@@ -380,59 +380,66 @@ button:focus {
 }
 
 .search-box {
-    position: absolute;
-    top: 21%;
-    left: 50%;
-    transform:  translate(-50%,50%);
-    background: #fff;
-    height: 60px;
-    border-radius: 5px;
-    padding: 10px;
-    color: var(--primary-color);
-    margin-bottom: 40px;
+    width: 100%;
+    background-color: var(--primary-color);
 }
 
-.search-box:hover > .search-input {
-    width: 300px;
-    padding: 0 6px;
+.search-title {
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+    color: var(--secondary-color);
+    
 }
 
-.search-box:hover > .search-button {
-  background: white;
-  color: var(--secondary-color);
-}
-
-.search-button {
-    color: white;
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    background: var(--secondary-color);
+.search-bar {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
+    position: relative;
 }
 
 .search-input {
-    border:none;
-    background: none;
-    outline:none;
-    float:left;
-    padding: 0;
-    color: var(--primary-color);
-    font-size: 20px;
-    transition: 0.4s;
-    line-height: 40px;
-    width: 0px;
+    width: 50%;
+    padding: 12px 24px;
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 18px;
+    line-height: 18px;
+    color: #fff;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    margin-left: 25%;
+    margin-bottom: 5%;
 }
 
-@media screen and (max-width: 620px) {
-.search-box:hover > .search-input {
-    width: 150px;
-    padding: 0 6px;
+.search-input::placeholder {
+    color: #bfbfbf;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
+
+.search-input:hover,
+.search-input:focus {
+    padding: 12px 0;
+    outline: 0;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    background-position: 100% center;
+}
+
+.search-button {
+    background-color: transparent;
+    position: absolute;
+    left: 71%;
+    top: 5%;
+    
 }
 
 .teams-container {
@@ -443,5 +450,5 @@ button:focus {
 
 .team-bg {
     background-color: white;
-    min-height: 360px;
+    min-height: 660px;
 }
