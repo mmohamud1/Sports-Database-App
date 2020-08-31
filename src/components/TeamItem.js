@@ -10,12 +10,16 @@ const TeamItem = ({ team }) => {
                 <div className="card-2-title">
                     <h2>{team.strTeam}</h2>
                 </div>
-                <div className="card-2-league">
+                <div className="card-2-info">
                     <p><strong>Sport:</strong> {team.strSport}</p>
                     <p><strong>Country:</strong> {team.strCountry}</p>
                     <p><strong>League:</strong> {team.strLeague}</p>
                     <p><strong>Stadium:</strong> {team.strStadium}</p>
+                    <p><strong>Location:</strong> {team.strStadiumLocation}</p>
                 </div>
+                <button className="card-2-btn">
+                    More Info
+                </button>
             </div>
         </div>
     )

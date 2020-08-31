@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../img/sportsicon.png'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -8,10 +9,10 @@ const Navbar = () => {
                 <img src={Logo} alt="Logo"/>
             </div>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/sports">Sports</a></li>
-                <li><a href="/teams">Teams</a></li>
-                <li><a href="/players">Players</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/sports">Sports</Link></li>
+                <li><Link to="/teams">Teams</Link></li>
+                <li><Link to="/players">Players</Link></li>
             </ul>
         </nav>
     )
