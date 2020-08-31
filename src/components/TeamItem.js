@@ -1,6 +1,8 @@
-import React from 'react'
+import React from 'react';
+
 
 const TeamItem = ({ team }) => {
+    
     return (
         <div className="card-2">
             <div className="card-2-top">

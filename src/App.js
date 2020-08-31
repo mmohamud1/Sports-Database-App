@@ -33,6 +33,7 @@ const App = () => {
       const res = await axios.get(`https://www.thesportsdb.com/api/v1/json/1/searchteams.php?t=${input}`)
       console.log(res.data.teams);
       setTeams(res.data.teams)
+      setLoading(false)
     } catch (err) {
       console.log(err);
     }
