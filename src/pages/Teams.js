@@ -4,11 +4,11 @@ import TeamItem from '../components/TeamItem'
 import Spinner from '../components/Spinner'
 
 
-const Teams = ({ getTeams, teams, loading }) => {
+const Teams = ({ getTeams, teams, loading, clearSearch }) => {
     if(loading) {
         return (
             <div className="team-bg">
-                <TeamSearch/>
+                <TeamSearch getTeams={getTeams} teams={teams} clearSearch={clearSearch} />
                 <Spinner />
             </div>
         )
@@ -18,7 +18,7 @@ const Teams = ({ getTeams, teams, loading }) => {
                 <TeamSearch getTeams={getTeams}/>
                 <div className="grid-3 teams-container">
                     {teams.map(team => (
-                        <TeamItem key={team.idTeam} team={team} />
+                        <TeamItem key={team.idTeam} team={team} clearSearch={clearSearch} />
                     ))}
                 </div>
             </div>

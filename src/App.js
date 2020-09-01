@@ -39,6 +39,12 @@ const App = () => {
     }
   }
 
+  // Clear Search
+  const clearSearch = () => {
+    setTeams([]);
+    setLoading(false)
+  }
+
   return (
     <Router>
       <div>
@@ -47,7 +53,7 @@ const App = () => {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/sports' render={(props) => <Sports listSports={listSports} sports={sports} loading={loading}/>} />
-          <Route exact path='/teams' render={(props) => <Teams getTeams={getTeams} teams={teams} loading={loading} />} />
+          <Route exact path='/teams' render={(props) => <Teams getTeams={getTeams} teams={teams} loading={loading} clearSearch={clearSearch} />} />
         </Switch>  
       </div>
     </Router>  
