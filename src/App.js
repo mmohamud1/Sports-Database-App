@@ -42,8 +42,8 @@ const App = () => {
   // Clear Search
   const clearSearch = () => {
     setTeams([]);
-    setLoading(false)
-  }
+    setLoading(false);
+  };
 
   return (
     <Router>

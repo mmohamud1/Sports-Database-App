@@ -1,28 +1,36 @@
-import React from 'react';
-
+import React, { useState } from 'react';
+import Modal from 'react-modal';;
 
 const TeamItem = ({ team }) => {
+    const [modalIsOpen, setModalIsOpen] = useState(false)
     
     return (
-        <div className="card-2">
-            <div className="card-2-top">
-                <img src={team.strTeamBadge} alt="team badge" className="card-2-top-img"/>
+        <div>
+            <div className="card-2">
+                <div className="card-2-top">
+                    <img src={team.strTeamBadge} alt="team badge" className="card-2-top-img"/>
+                </div>
+                <div className="card-2-bottom">
+                    <div className="card-2-title">
+                        <h2>{team.strTeam}</h2>
+                    </div>
+                    <div className="card-2-info">
+                        <p><strong>Sport:</strong> {team.strSport}</p>
+                        <p><strong>Country:</strong> {team.strCountry}</p>
+                        <p><strong>League:</strong> {team.strLeague}</p>
+                        <p><strong>Stadium:</strong> {team.strStadium}</p>
+                        <p><strong>Location:</strong> {team.strStadiumLocation}</p>
+                    </div>
+                    <button className="card-2-btn" onClick={() => setModalIsOpen(true)}>
+                        More Info
+                    </button>
+                </div>
             </div>
-            <div className="card-2-bottom">
-                <div className="card-2-title">
-                    <h2>{team.strTeam}</h2>
-                </div>
-                <div className="card-2-info">
-                    <p><strong>Sport:</strong> {team.strSport}</p>
-                    <p><strong>Country:</strong> {team.strCountry}</p>
-                    <p><strong>League:</strong> {team.strLeague}</p>
-                    <p><strong>Stadium:</strong> {team.strStadium}</p>
-                    <p><strong>Location:</strong> {team.strStadiumLocation}</p>
-                </div>
-                <button className="card-2-btn">
-                    More Info
+            <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} className="modal-3" ariaHideApp={false}>
+                <button className="close-btn close-btn-2" onClick={() => setModalIsOpen(false)} >
+                    <i className="fa fa-times"></i>
                 </button>
-            </div>
+            </Modal>
         </div>
     )
 }

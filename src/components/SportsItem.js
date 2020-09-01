@@ -18,7 +18,7 @@ const SportsItem = ({ sport }) => {
                     </button>
                 </div>
             </div>
-            <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} className="modal-2">
+            <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} className="modal-2" ariaHideApp={false}>
                 <button className="close-btn" onClick={() => setModalIsOpen(false)} >
                     <i className="fa fa-times"></i>
                 </button>

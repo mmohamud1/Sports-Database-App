@@ -27,7 +27,7 @@ const Home = () => {
                 </ul>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus amet, expedita ab excepturi deleniti repellat explicabo libero saepe consectetur, quos optio ipsum perferendis accusamus quam error voluptatum molestiae reiciendis mollitia dolorem earum, cupiditate fugit modi eius. Molestias deleniti aut nesciunt. Tempora dolore aliquid illum fugiat neque cupiditate recusandae, tempore, minima velit quod molestias eveniet numquam ullam, ut sint atque explicabo ad quisquam at suscipit architecto magni officia maiores. Culpa.</p> 
             </div>    
-            <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} className="modal-1">
+            <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} className="modal-1" ariaHideApp={false}>
                 <button className="close-btn" onClick={() => setModalIsOpen(false)} >
                     <i class="fa fa-times"></i>
                 </button>

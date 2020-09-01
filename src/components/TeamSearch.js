@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const TeamSearch = ({ getTeams, teams, clearSearch }) => {
+const TeamSearch = ({ getTeams }) => {
     const [text, setText] = useState('');
 
     const onSubmit = e => {
@@ -25,7 +25,6 @@ const TeamSearch = ({ getTeams, teams, clearSearch }) => {
                     </button>
                 </div>
             </form>
-            
         </div>
     )
 }

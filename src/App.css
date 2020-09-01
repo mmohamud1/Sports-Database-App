@@ -176,7 +176,8 @@ button:focus {
 }
 
 .modal-1:focus,
-.modal-2:focus {
+.modal-2:focus,
+.modal-3 {
     outline: none;
 }
 
@@ -477,7 +478,7 @@ button:focus {
 }
 
 .card-2-bottom {
-    height: auto;
+    height: 30rem;
     width: 20rem;
     padding: 1rem 2rem;
 
@@ -499,4 +500,26 @@ button:focus {
     margin-top: 20px;
     padding: 15px 19px;
     font-size: 17px;
+}
+
+.clear-btn {
+    background-color: transparent;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-left: 6px;
+    border-radius: 1px;
+}
+
+.clear-btn:hover {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.modal-3 {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.close-btn-2 {
+    color: var(--primary-color);
 }
