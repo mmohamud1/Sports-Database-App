@@ -172,7 +172,8 @@ button:focus {
 }
 
 .modal-2 {
-    width: 1250px;
+    width: 100%;
+    height: auto;
 }
 
 .modal-1:focus,
@@ -447,7 +448,7 @@ button:focus {
 
 .team-bg {
     background-color: white;
-    min-height: 500px;
+    min-height: 90vh;
 }
 
 .card-2 {
@@ -532,8 +533,8 @@ button:focus {
 }
 
 .modal-3-img {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     margin: 0 7px;
 }
 

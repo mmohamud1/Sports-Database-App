@@ -39,6 +39,8 @@ const App = () => {
     }
   }
 
+  // Search for players by name
+
   // Clear Search
   const clearSearch = () => {
     setTeams([]);
