@@ -30,6 +30,14 @@ const TeamItem = ({ team }) => {
                 <button className="close-btn close-btn-2" onClick={() => setModalIsOpen(false)} >
                     <i className="fa fa-times"></i>
                 </button>
+                <div className="modal-3-tltle">
+                    <img src={team.strTeamBadge} alt='loading' className="modal-3-img"/>
+                    <h2>{team.strTeam}</h2>
+                </div>
+                <div className="modal-3-content">
+                    <p>{team.strDescriptionEN}</p>
+                    <p>{team.strStadiumDescription}</p>
+                </div>
             </Modal>
         </div>
     )

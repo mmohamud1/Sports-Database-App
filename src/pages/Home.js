@@ -29,7 +29,7 @@ const Home = () => {
             </div>    
             <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} className="modal-1" ariaHideApp={false}>
                 <button className="close-btn" onClick={() => setModalIsOpen(false)} >
-                    <i class="fa fa-times"></i>
+                    <i className="fa fa-times"></i>
                 </button>
                 <div className="modal-1-header">
                     <img src={Logo} alt="logo" style={{ width: '55px', height: '50px'}}/>
