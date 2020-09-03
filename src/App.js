@@ -7,11 +7,13 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Sports from './pages/Sports';
 import Teams from './pages/Teams';
+import Players from './pages/Players';
 
 const App = () => {
   const [sports, setSports] = useState([]);
   const [loading, setLoading] = useState(false);
   const [teams, setTeams] = useState([]);
+  const [players, setPlayers] = useState([]);
 
   // Get list of all sports
   const listSports = async () => {
@@ -40,6 +42,17 @@ const App = () => {
   }
 
   // Search for players by name
+  const getPlayers = async (input) => {
+    try {
+      setLoading(true);
+      const res = await axios.get(`https://www.thesportsdb.com/api/v1/json/1/searchplayers.php?p=${input}`)
+      console.log(res.data);
+      setPlayers(res.data)
+      setLoading(false)
+    } catch {
+      console.log(err);
+    }
+  }
 
   // Clear Search
   const clearSearch = () => {
@@ -56,6 +69,7 @@ const App = () => {
           <Route exact path='/' component={Home} />
           <Route exact path='/sports' render={(props) => <Sports listSports={listSports} sports={sports} loading={loading}/>} />
           <Route exact path='/teams' render={(props) => <Teams getTeams={getTeams} teams={teams} loading={loading} clearSearch={clearSearch} />} />
+          <Route exact path='/players' render={(props) => <Players getPlayers={getPlayers} players={players} loading={looading}}
         </Switch>  
       </div>
     </Router>  
