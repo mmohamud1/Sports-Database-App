@@ -58,7 +58,7 @@ const Home = () => {
                     </form>
                 </div>
             </Modal>
-            </section>
+        </section>
     )
 }
 

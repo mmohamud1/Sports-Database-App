@@ -26,7 +26,7 @@ const App = () => {
     } catch (err) {
       console.log(err);
     }
-  }
+  };
 
   // Search for teams by name
   const getTeams = async (input) => {

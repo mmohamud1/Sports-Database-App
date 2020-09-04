@@ -4,6 +4,7 @@ import TeamItem from '../components/TeamItem'
 import Spinner from '../components/Spinner'
 
 const Teams = ({ getTeams, teams, loading, clearSearch }) => {
+    // Show spinner while fetching Api info
     if(loading) {
         return (
             <div className="team-bg">
@@ -11,6 +12,7 @@ const Teams = ({ getTeams, teams, loading, clearSearch }) => {
                 <Spinner />
             </div>
         )
+    // Show error message if there is no result for user input and clear btn
     } else if (teams === null) {
         return (
             <div className="team-bg">
@@ -21,6 +23,7 @@ const Teams = ({ getTeams, teams, loading, clearSearch }) => {
                 <h1 className="error-msg">no results</h1>
             </div>
         )
+    // Show cards for teams searched and clear btn
     } else {
         return (
             <div className="team-bg">

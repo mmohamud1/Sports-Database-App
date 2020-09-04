@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../img/player.png'
 
 const PlayerItem = ({ player }) => {
+    // Card for players without images
     if (player.strCutout === null ) {
         return (
             <div>
@@ -27,6 +28,7 @@ const PlayerItem = ({ player }) => {
                 </div>
             </div>
         )
+    // Card for players with images
     } else {
         return (
             <div>
