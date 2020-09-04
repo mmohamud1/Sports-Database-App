@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../img/sportsicon.png'
+import logo from '../img/player.png'
 
 const PlayerItem = ({ player }) => {
     if (player.strCutout === null ) {
@@ -7,7 +7,7 @@ const PlayerItem = ({ player }) => {
             <div>
                 <div className="card-2">
                     <div className="card-2-top">
-                        <img src={logo} alt=" player img" className="card-2-top-img"/>
+                        <img src={logo} alt="player img" className="card-2-top-img card-2-top-img-2"/>
                     </div>
                     <div className="card-2-bottom card-3-bottom">
                         <div className="card-2-title">
@@ -32,7 +32,7 @@ const PlayerItem = ({ player }) => {
             <div>
                 <div className="card-2">
                     <div className="card-2-top">
-                        <img src={player.strCutout} alt=" player img" className="card-2-top-img"/>
+                        <img src={player.strCutout} alt="player img" className="card-2-top-img"/>
                     </div>
                     <div className="card-2-bottom card-3-bottom">
                         <div className="card-2-title">

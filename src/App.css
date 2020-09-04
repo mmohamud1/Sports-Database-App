@@ -485,6 +485,11 @@ button:focus {
     transform: translate(-50%, -50%);
 }
 
+.card-2-top-img-2 {
+    height: 21rem;
+    width: 21rem;
+}
+
 .card-2-bottom {
     height: 30rem;
     width: 20rem;
