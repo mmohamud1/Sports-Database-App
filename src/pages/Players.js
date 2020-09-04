@@ -11,6 +11,16 @@ const Players = ({ getPlayers, players, loading, clearSearch }) => {
                 <Spinner />        
             </div>
         )
+    } else if (players === null) {
+        return (
+            <div className="team-bg">
+                <PlayerSearch getPlayers={getPlayers} />
+                <button className="clear-btn"  onClick={clearSearch}>
+                    <i className="fa fa-times"></i> Clear Search
+                </button>
+                <h1 className="error-msg">no results</h1>      
+            </div> 
+        )
     } else {
         return (
             <div className="team-bg">
