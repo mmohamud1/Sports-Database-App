@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
-import Logo from '../img/sportsicon.png'
+import Logo from '../img/sportsicon.png';
 
 const SportsItem = ({ sport }) => {
     const [modalIsOpen, setModalIsOpen] = useState(false)

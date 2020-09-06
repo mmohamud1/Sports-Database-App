@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../img/player.png'
+import logo from '../img/player.png';
 import Modal from 'react-modal';
 
 const PlayerItem = ({ player }) => {
