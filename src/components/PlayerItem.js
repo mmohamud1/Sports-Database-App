@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react';
 import logo from '../img/player.png'
+import Modal from 'react-modal';
 
 const PlayerItem = ({ player }) => {
+    const [modalIsOpen, setModalIsOpen] = useState(false)
     // Card for players without images
     if (player.strCutout === null ) {
         return (
@@ -21,11 +23,23 @@ const PlayerItem = ({ player }) => {
                             <p><strong>Nationality:</strong> {player.strNationality}</p>
                             <p><strong>Gender:</strong> {player.strGender}</p>
                         </div>
-                        <button className="card-2-btn">
+                        <button className="card-2-btn" onClick={() => setModalIsOpen(true)}>
                             More Info
                         </button>
                     </div>
                 </div>
+                <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} className="modal-3" ariaHideApp={false}>
+                    <button className="close-btn close-btn-2" onClick={() => setModalIsOpen(false)} >
+                        <i className="fa fa-times"></i>
+                    </button>
+                    <div className="modal-3-tltle">
+                        <img src={logo} alt='player' className="modal-3-img"/>
+                        <h2>{player.strPlayer}</h2>
+                    </div>
+                    <div className="modal-3-content">
+                        <p>{player.strDescriptionEN}</p>
+                    </div>
+                </Modal>
             </div>
         )
     // Card for players with images
@@ -47,11 +61,26 @@ const PlayerItem = ({ player }) => {
                             <p><strong>Nationality:</strong> {player.strNationality}</p>
                             <p><strong>Gender:</strong> {player.strGender}</p>
                         </div>
-                        <button className="card-2-btn">
+                        <button className="card-2-btn" onClick={() => setModalIsOpen(true)}>
                             More Info
                         </button>
                     </div>
                 </div>
+                <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} className="modal-3" ariaHideApp={false}>
+                    <button className="close-btn close-btn-2" onClick={() => setModalIsOpen(false)} >
+                        <i className="fa fa-times"></i>
+                    </button>
+                    <button className="close-btn close-btn-2" onClick={() => setModalIsOpen(false)} >
+                        <i className="fa fa-times"></i>
+                    </button>
+                    <div className="modal-3-tltle">
+                        <img src={player.strCutout} alt='player' className="modal-3-img"/>
+                        <h2>{player.strPlayer}</h2>
+                    </div>
+                    <div className="modal-3-content">
+                        <p>{player.strDescriptionEN}</p>
+                    </div>
+                </Modal>
             </div>
         )
     }

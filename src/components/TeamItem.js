@@ -33,7 +33,7 @@ const TeamItem = ({ team }) => {
                         <i className="fa fa-times"></i>
                     </button>
                     <div className="modal-3-tltle">
-                        <img src={Logo} alt='loading' className="modal-3-img"/>
+                        <img src={Logo} alt='badge' className="modal-3-img"/>
                         <h2>{team.strTeam}</h2>
                     </div>
                     <div className="modal-3-content">
