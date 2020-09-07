@@ -558,7 +558,7 @@ button:focus {
 .footer {
     width: 100%;
     height: auto;
-    padding: 2.5rem 5rem;
+    padding: 1rem 7.34rem;
     color: white;
 }
 
@@ -568,13 +568,13 @@ button:focus {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-gap: 0.938rem;
     align-items: center;
-    margin-left: 65px;
 }
 
 .footer-nav-link {
     font-weight: 300;
     cursor: pointer;
     font-size: 20px;
+    margin-left: 40px;
 }
 
 .footer-nav-link:link,
