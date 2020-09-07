@@ -145,14 +145,14 @@ button:focus {
 
 .home {
     margin: 30px 0;
-    padding: 15px 250px ;
+    padding: 40px 250px ;
     background-color: #fff;
     min-height: 100%;
     color: var(--primary-color);
 }
 
 .home h2 {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .modal-1,
