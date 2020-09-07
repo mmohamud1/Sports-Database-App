@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Sports from './pages/Sports';
 import Teams from './pages/Teams';
 import Players from './pages/Players';
+import Footer from './components/Footer';
 
 const App = () => {
   const [sports, setSports] = useState([]);
@@ -72,6 +73,7 @@ const App = () => {
           <Route exact path='/teams' render={(props) => <Teams getTeams={getTeams} teams={teams} loading={loading} clearSearch={clearSearch} />} />
           <Route exact path='/players' render={(props) => <Players getPlayers={getPlayers} players={players} loading={loading} clearSearch={clearSearch} />} />
         </Switch>  
+        <Footer />
       </div>
     </Router>  
   );
