@@ -554,3 +554,51 @@ button:focus {
     color: #fff;
     font-size: 14px;
 }
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 2.5rem 5rem;
+    color: white;
+}
+
+.footer-nav {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 0.938rem;
+    align-items: center;
+    margin-left: 65px;
+}
+
+.footer-nav-link {
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.footer-nav-link:link,
+.footer-nav-link:visited {
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    display: block; 
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:active {
+    transform: translateY(-5px);
+}
+
+.footer-copyright {
+    font-size: 0.875rem;
+    margin-top: 3.75rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 70%;
+    font-weight: 200;
+    color: #e7e7e7;
+}
