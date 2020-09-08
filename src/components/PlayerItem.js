@@ -36,7 +36,7 @@ const PlayerItem = ({ player }) => {
                         <img src={logo} alt='player' className="modal-3-img"/>
                         <h2>{player.strPlayer}</h2>
                     </div>
-                    <div className="modal-3-content">
+                    <div className="modal-3-content modal-3-content-pl">
                         <p>{player.strDescriptionEN}</p>
                     </div>
                 </Modal>
@@ -77,7 +77,7 @@ const PlayerItem = ({ player }) => {
                         <img src={player.strCutout} alt='player' className="modal-3-img"/>
                         <h2>{player.strPlayer}</h2>
                     </div>
-                    <div className="modal-3-content">
+                    <div className="modal-3-content modal-3-content-pl">
                         <p>{player.strDescriptionEN}</p>
                     </div>
                 </Modal>
