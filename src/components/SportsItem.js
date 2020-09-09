@@ -32,7 +32,7 @@ const SportsItem = ({ sport }) => {
                 </div>
             </Modal>
         </div>
-    )
-}
+    );
+};
 
-export default SportsItem
+export default SportsItem;

@@ -26,7 +26,7 @@ const PlayerSearch = ({ getPlayers }) => {
                 </div>
             </form>
         </div>
-    )
-}
+    );
+};
 
-export default PlayerSearch
+export default PlayerSearch;

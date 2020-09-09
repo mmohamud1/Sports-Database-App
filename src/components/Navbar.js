@@ -1,5 +1,5 @@
-import React from 'react'
-import Logo from '../img/sportsicon.png'
+import React from 'react';
+import Logo from '../img/sportsicon.png';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -16,6 +16,6 @@ const Navbar = () => {
             </ul>
         </nav>
     )
-}
+};
 
-export default Navbar
+export default Navbar;

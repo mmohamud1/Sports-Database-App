@@ -20,7 +20,7 @@ const App = () => {
   const listSports = async () => {
     try {
       setLoading(true);
-      const res = await axios.get(`https://www.thesportsdb.com/api/v1/json/1/all_sports.php`)
+      const res = await axios.get(`https://www.thesportsdb.com/api/v1/json/1/all_sports.php`);
       //console.log(res.data.sports);
       setSports(res.data.sports);
       setLoading(false);
@@ -33,10 +33,10 @@ const App = () => {
   const getTeams = async (input) => {
     try {
       setLoading(true);
-      const res = await axios.get(`https://www.thesportsdb.com/api/v1/json/1/searchteams.php?t=${input}`)
+      const res = await axios.get(`https://www.thesportsdb.com/api/v1/json/1/searchteams.php?t=${input}`);
       //console.log(res.data.teams);
-      setTeams(res.data.teams)
-      setLoading(false)
+      setTeams(res.data.teams);
+      setLoading(false);
     } catch (err) {
       console.log(err);
     }
@@ -46,10 +46,10 @@ const App = () => {
   const getPlayers = async (input) => {
     try {
       setLoading(true);
-      const res = await axios.get(`https://www.thesportsdb.com/api/v1/json/1/searchplayers.php?p=${input}`)
+      const res = await axios.get(`https://www.thesportsdb.com/api/v1/json/1/searchplayers.php?p=${input}`);
       console.log(res.data.player);
-      setPlayers(res.data.player)
-      setLoading(false)
+      setPlayers(res.data.player);
+      setLoading(false);
     } catch (err) {
       console.log(err);
     }
@@ -77,6 +77,6 @@ const App = () => {
       </div>
     </Router>  
   );
-}
+};
 
 export default App;

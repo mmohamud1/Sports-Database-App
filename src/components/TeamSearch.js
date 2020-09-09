@@ -26,7 +26,7 @@ const TeamSearch = ({ getTeams }) => {
                 </div>
             </form>
         </div>
-    )
-}
+    );
+};
 
-export default TeamSearch
+export default TeamSearch;

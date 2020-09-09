@@ -59,7 +59,7 @@ const Home = () => {
                 </div>
             </Modal>
         </section>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;

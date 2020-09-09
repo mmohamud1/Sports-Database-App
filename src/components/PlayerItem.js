@@ -41,7 +41,7 @@ const PlayerItem = ({ player }) => {
                     </div>
                 </Modal>
             </div>
-        )
+        );
     // Card for players with images
     } else {
         return (
@@ -82,8 +82,8 @@ const PlayerItem = ({ player }) => {
                     </div>
                 </Modal>
             </div>
-        )
-    }
-}
+        );
+    };
+};
 
-export default PlayerItem
+export default PlayerItem;

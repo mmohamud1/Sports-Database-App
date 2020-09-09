@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Header = () => {
     // toggle nav button 
@@ -14,6 +14,6 @@ const Header = () => {
             <h1>Sports Database</h1>
         </header>
     )
-}
+};
 
-export default Header
+export default Header;

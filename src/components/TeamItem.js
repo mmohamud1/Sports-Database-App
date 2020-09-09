@@ -42,7 +42,7 @@ const TeamItem = ({ team }) => {
                     </div>
                 </Modal>
             </div> 
-        )
+        );
     // Card for teams with badges
     } else {
         return (
@@ -81,8 +81,8 @@ const TeamItem = ({ team }) => {
                     </div>
                 </Modal>
             </div>
-        )
-    }
-}
+        );
+    };
+};
 
-export default TeamItem
+export default TeamItem;
