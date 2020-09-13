@@ -1,7 +1,7 @@
 import React from 'react';
 import TeamSearch from '../components/TeamSearch';
-import TeamItem from '../components/TeamItem'
-import Spinner from '../components/Spinner'
+import TeamItem from '../components/TeamItem';
+import Spinner from '../components/Spinner';
 
 const Teams = ({ getTeams, teams, loading, clearSearch }) => {
     // Show spinner while fetching Api info
@@ -39,8 +39,8 @@ const Teams = ({ getTeams, teams, loading, clearSearch }) => {
                     ))}
                 </div>
             </div>
-        )
-    }
-}
+        );
+    };
+};
 
-export default Teams
+export default Teams;

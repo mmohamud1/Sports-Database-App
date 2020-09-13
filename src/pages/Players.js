@@ -39,8 +39,8 @@ const Players = ({ getPlayers, players, loading, clearSearch }) => {
                    ))}
                </div>
             </div>
-        )
-    }
-}
+        );
+    };
+};
 
-export default Players
+export default Players;
