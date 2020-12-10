@@ -20,7 +20,9 @@ const App = () => {
   const listSports = async () => {
     try {
       setLoading(true);
-      const res = await axios.get(`https://www.thesportsdb.com/api/v1/json/1/all_sports.php`);
+      const res = await axios.get(
+        `https://www.thesportsdb.com/api/v1/json/1/all_sports.php`
+      );
       //console.log(res.data.sports);
       setSports(res.data.sports);
       setLoading(false);
@@ -33,7 +35,9 @@ const App = () => {
   const getTeams = async (input) => {
     try {
       setLoading(true);
-      const res = await axios.get(`https://www.thesportsdb.com/api/v1/json/1/searchteams.php?t=${input}`);
+      const res = await axios.get(
+        `https://www.thesportsdb.com/api/v1/json/1/searchteams.php?t=${input}`
+      );
       //console.log(res.data.teams);
       setTeams(res.data.teams);
       setLoading(false);
@@ -46,7 +50,9 @@ const App = () => {
   const getPlayers = async (input) => {
     try {
       setLoading(true);
-      const res = await axios.get(`https://www.thesportsdb.com/api/v1/json/1/searchplayers.php?p=${input}`);
+      const res = await axios.get(
+        `https://www.thesportsdb.com/api/v1/json/1/searchplayers.php?p=${input}`
+      );
       console.log(res.data.player);
       setPlayers(res.data.player);
       setLoading(false);
@@ -69,13 +75,45 @@ const App = () => {
         <Header />
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/sports' render={(props) => <Sports listSports={listSports} sports={sports} loading={loading}/>} />
-          <Route exact path='/teams' render={(props) => <Teams getTeams={getTeams} teams={teams} loading={loading} clearSearch={clearSearch} />} />
-          <Route exact path='/players' render={(props) => <Players getPlayers={getPlayers} players={players} loading={loading} clearSearch={clearSearch} />} />
-        </Switch>  
+          <Route
+            exact
+            path='/sports'
+            render={(props) => (
+              <Sports
+                listSports={listSports}
+                sports={sports}
+                loading={loading}
+              />
+            )}
+          />
+          <Route
+            exact
+            path='/teams'
+            render={(props) => (
+              <Teams
+                getTeams={getTeams}
+                teams={teams}
+                loading={loading}
+                clearSearch={clearSearch}
+              />
+            )}
+          />
+          <Route
+            exact
+            path='/players'
+            render={(props) => (
+              <Players
+                getPlayers={getPlayers}
+                players={players}
+                loading={loading}
+                clearSearch={clearSearch}
+              />
+            )}
+          />
+        </Switch>
         <Footer />
       </div>
-    </Router>  
+    </Router>
   );
 };
 
