@@ -597,8 +597,8 @@ button:focus {
 }
 
 .modal-3 {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     background-image: linear-gradient( to right bottom,rgb(48,51,107,0.8),rgb(190,62,221,0.8));
     z-index: 2;
     overflow-y: auto;
@@ -611,19 +611,19 @@ button:focus {
     text-align: center;
     color: #fff;
     padding: 20px;
-    font-size: 25px;
+    font-size: 40px;
 }
 
 .modal-3-img {
-    width: 70px;
-    height: 70px;
+    width: 140px;
+    height: 140px;
     margin: 0 7px;
 }
 
 .modal-3-content {
     padding: 0 50px;
     color: #fff;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 @media (min-width: 1700px) {
